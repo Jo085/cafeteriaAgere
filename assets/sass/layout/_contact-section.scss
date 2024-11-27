@@ -1,0 +1,46 @@
+
+.contact{
+  display: flex;  
+}
+
+.contact-text-container{
+  width: 33.6vw;
+  padding: 5% 5.7%; 
+
+  &__title{
+     margin-bottom: 5%;
+  }
+}
+
+.images-container{
+  width: 70vw;
+  position: relative; 
+
+  &__img-map{
+    width: 47%;
+    height: 80%;   
+    position: absolute;
+    top: 11%;
+    left: -5%;
+  }
+  
+  &__img-grains{
+    width: 11%;
+    height: 63%;
+    object-fit: cover;
+    object-position: 44%;        
+    position: absolute;
+    top:0;
+    right: 42%;
+    z-index: 1;      
+  }
+
+  &__img-coffee{
+    width: 46%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    right: 0;
+  } 
+}   

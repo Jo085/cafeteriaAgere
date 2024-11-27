@@ -1,0 +1,70 @@
+// LLAMADO
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+// NAV
+.nav-container {
+  &__link {
+    @include mixins.font-PTmono;
+    font-size: variables.$font-size-nav;
+    color: variables.$graycolor-nav;
+    text-decoration: none;
+  }
+
+  &__link--hover:hover {
+    color: variables.$hover-black;
+  }
+}
+
+.container-buttons__btn {
+  @include mixins.font-btn;
+
+  &--primary {
+    color: variables.$graycolor-nav;
+  }
+
+  &--secondary {
+    color: #fff;
+  }
+}
+
+// HEADER
+.header-text-container {
+  &__title {
+    @include mixins.font-PTmono; 
+    font-size: 5.15vw;
+   
+  }
+
+  &__subtitle {
+    @include mixins.font-roboto;
+    font-size: 1.32vw;
+  }
+}
+
+.container-info {
+  &__title {
+    @include mixins.font-PTmono;    
+    font-size: 2.9vw;
+  }
+
+  &__text {
+    @include mixins.font-roboto;    
+    font-size: 1.18vw;
+    text-align: left;
+  }
+}
+
+// CONTACT SECTION
+.contact-text-container {
+  &__title {
+    @include mixins.font-PTmono;
+    font-size: 2.2vw;
+    
+  }
+
+  &__paragraph {
+    @include mixins.font-roboto;
+    font-size: 1.2vw;
+  }
+}

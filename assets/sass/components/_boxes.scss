@@ -1,0 +1,41 @@
+// LLAMADO
+@use "../abstracts/variables";
+
+// HEADER
+.box {
+  &--yellow {
+    background-color: variables.$bgcolor-yellow;
+    width: 32.4%;
+    height: 100%;
+    display: inline;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &--flame {
+    background-color: variables.$bgcolor-flame;
+    width: 32.4%;
+    height: 100%;
+    position: absolute;
+    left: -4%;
+    bottom: 16%;
+    z-index: 2;
+
+    img {
+      width: 45%;
+      position: absolute;
+      left: 28%;
+      top: 28%;
+      filter: invert(180%);
+    }
+  }
+}
+
+// CONTACT SECTION
+.images-container {
+  &__box-contact {
+    width: 54%;
+    height: 88%;
+    background-color: variables.$bgcolor-blue;
+  }
+}

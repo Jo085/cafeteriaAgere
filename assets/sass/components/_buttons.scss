@@ -1,0 +1,29 @@
+// LLAMADOS
+@use "../abstracts/variables";
+
+// NAV BUTTONS
+.container-buttons {
+  &__btn {
+    width: 47%;
+    padding: 2% 0;
+
+    &--primary {         
+      background-color: white;
+      border: solid 1px variables.$graycolor-nav;
+
+      &:hover {
+        color: variables.$hover-black;
+        border: solid 1px variables.$hover-black;
+      }
+    }
+
+    &--secondary {           
+      background-color: variables.$secondary-bgcolor;
+
+      &:hover {
+        background-color: variables.$hover-secondary-btn;
+        color: variables.$hover-black;
+      }
+    }
+  }
+}

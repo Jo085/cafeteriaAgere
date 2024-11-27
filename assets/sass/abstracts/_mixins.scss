@@ -1,0 +1,18 @@
+@use "../abstracts/variables";
+
+// TYPOGRAPHY
+@mixin font-btn{
+    font-family: variables.$PTmono-font;
+    font-size: variables.$font-size-nav;
+    font-weight: variables.$PTmono-font-weight;
+}
+
+@mixin font-PTmono{
+    font-family: variables.$PTmono-font;    
+    font-weight: variables.$PTmono-font-weight;
+}
+
+@mixin font-roboto{
+    font-family: variables.$Roboto-font;
+    font-weight: variables.$Roboto-font-weight;
+}
